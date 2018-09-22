@@ -17,5 +17,5 @@ app.set("view engine", "handlebars");
 app.use(routes);
 
 app.listen(PORT, function(){
-    console.log("Burgers is now listening at localhost: " + PORT);
+    console.log("Server is now listening at localhost: " + PORT);
 })
