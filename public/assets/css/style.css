@@ -1,0 +1,35 @@
+
+.margin10 {
+    margin: 10px;
+}
+
+.borderDarkBlue {
+    border: 1px solid darkblue;
+}
+
+.lgiColor {
+    background-color: #F5F5F5;
+}
+
+.title {
+    margin-top: 20px;
+}
+
+body {
+    background-color: #A0A0A0;
+}
+
+hr {
+    
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid darkblue;
+    margin-bottom: 50px;
+    padding: 0; 
+}
+
+#burgerName {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+}

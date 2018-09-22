@@ -1,0 +1,48 @@
+<div class="container">
+    <h1 class="title">Eat-Da-Burger</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-5 borderDarkBlue">
+            <h3>Burgers Not Eaten</h3>
+            <ul class="list-group margin10">
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        <li class="list-group-item margin10 lgiColor">{{>devours/devoured-block devour=false}}</li>
+                    {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-md-2"></div> {{!-- gutter --}}
+        <div class="col-md-5 borderDarkBlue">
+            <h3>Burgers Devoured</h3>
+            <ul class="list-group margin10">
+                {{#each burgers}}
+                    {{#if devoured}}
+                        <li class="list-group-item margin10 lgiColor">
+                            <p id="burgerName">{{burger_name}} </p>
+                        </li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <form class="create-form">
+                <ul class="list-group margin10 ">
+                    <li class="list-group-item margin10 lgiColor">
+                        <label for="newBurger">Enter Burger Name</label>
+                            <br>
+                        <input type="text" id="newBurger" name="burgerName">
+                            <br>
+                        <button type="submit" class="btn btn-primary margin10" id="burger">
+                            Order a Burger
+                        </button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="col-md-7">
+        </div>
+    </div>
+</div>
